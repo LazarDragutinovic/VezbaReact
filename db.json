@@ -1,0 +1,56 @@
+{
+    "proizvodi":[
+        {
+            "id":0,
+            "naziv":"Lopta",
+            "cena":2000,
+            "tip":"sport"
+        },
+        
+        {
+            "id":1,
+            "naziv":"Reket",
+            "cena":2000,
+            "tip":"sport"
+        }
+        ,
+        {
+            "id":2,
+            "naziv":"Lampa",
+            "cena":2000,
+            "tip":"alati"
+        },
+        {
+            "id":3,
+            "naziv":"Srafciger",
+            "cena":2000,
+            "tip":"alati"
+        },
+        {
+            "id":4,
+            "naziv":"Sekac",
+            "cena":2000,
+            "tip":"alati"
+        },
+        {
+            "id":5,
+            "naziv":"Sekac",
+            "cena":2000,
+            "tip":"alati"
+        },
+        {
+            "id":6,
+            "naziv":"Sekac",
+            "cena":2000,
+            "tip":"alati"
+        },
+        {
+            "id":7,
+            "naziv":"Sekac",
+            "cena":2000,
+            "tip":"alati"
+        }
+
+
+    ]
+}

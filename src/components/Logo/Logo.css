@@ -1,0 +1,13 @@
+.Logo {
+    flex:1 1 auto;
+    font-weight: 800;
+    font-size: 40px;
+    
+}
+
+.logoStubTitle {
+    color: var(--text-color-oragne);
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: -15px;
+}

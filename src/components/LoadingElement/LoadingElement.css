@@ -1,0 +1,13 @@
+.LoadingElement {
+    animation-name: Rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes Rotation {
+    0%{rotate: 0;}
+    100%{rotate: 360deg;}
+}

@@ -1,0 +1,28 @@
+.NavButtons {
+    display: flex;
+    width: 270px;
+    justify-content: space-evenly;
+    
+}
+.NavButtons button {
+    border: 0;
+    
+}
+
+.DinUKorpi {
+    color: var(--text-color-orangeDark);
+}
+
+.MinimizedSearch {
+    display: none;
+}
+
+@media (max-width: 570px) {
+    .MinimizedSearch {
+        display: block;
+    }
+
+    .DinUKorpi {
+        display: none;
+    }
+}

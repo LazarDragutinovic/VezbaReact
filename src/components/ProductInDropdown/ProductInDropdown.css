@@ -1,0 +1,9 @@
+.ProductDropdownInfo {
+    height: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    
+    width: 95%;
+}
