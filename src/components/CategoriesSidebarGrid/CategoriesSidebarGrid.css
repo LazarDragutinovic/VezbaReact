@@ -1,0 +1,9 @@
+.CloseBar {
+    width: 100%;
+    height: 52px;
+    border: 1px solid var(--text-color-orangeDark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}

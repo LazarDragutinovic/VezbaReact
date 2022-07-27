@@ -9,8 +9,15 @@ nav {
 }
 
 .NavExtended {
-    height: 185px;
+    height: 212px;
 }
+
+@media (min-width: 770px) {
+    .NavExtended {
+        height: 89px;
+    }
+}
+
 
 .LogoAccountButton {
     flex: 1 1 auto;
@@ -21,7 +28,7 @@ nav {
 }
 
 .NavInnerContener {
-    width: 80%;
+    width: 95%;
     margin:auto;
     display: flex;
     justify-content: space-between;
@@ -32,6 +39,8 @@ nav {
     display: flex;
     flex: 2 2 auto;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
 }
 
 .NavButton {
@@ -79,7 +88,7 @@ nav {
     
 }
 
-@media (max-width: 770px) {
+@media (max-width: var(--breakpoint-md)) {
     .AccountButton {
         display: block;
     }

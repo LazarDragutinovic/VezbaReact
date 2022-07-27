@@ -1,0 +1,53 @@
+.CategoryButton {
+    height: 100%;
+    width: 150px;
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.CategoryButtonInner {
+    width: 123px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    position: relative;
+}
+
+.CategoryButtonInner:hover {
+    border-width: 1px;
+    border-color: var(--text-color-orangeDark);
+    border-style: solid;
+    transition: 0.5s;
+}
+
+.CategoryButtonInner:hover span {
+    color: var(--text-color-orangeDark);
+    transition: 0.5s;
+}
+
+.CategoryButtonInner span {
+    font-size: 16px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.CategoryNavIcon {
+    color: var(--text-color-gray);
+    width: 22px;
+    height: 22px;
+}
+
+
+.HoverShow {
+    display: none;
+    position: absolute;
+    top: 95px;
+    left: 70px;
+}
+
+.CategoryButton:hover .HoverShow {
+    display: block;
+}

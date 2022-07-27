@@ -6,12 +6,14 @@ import Search from "../Search/Search";
 import "./Nav.css"
 import { useState } from "react";
 import useSearchHook from "../../hooks/useSearchHook";
+import Categories from "../Categories/Categories";
+import CategoriesSidebar from "../CategoriesSidebar/CategoriesSidebar";
 
 function Nav() {
 
-
+    const [displayCategories,setDisplayCategories] = useState<boolean>(false);
     const {searchActive,setSearchActive,classList,searchText,setSearchText,products,loading}=useSearchHook();
-
+    const [showCategoriesSidebar,setShowCategoriesSidebar] = useState<boolean>(false);
     return ( <nav className={classList}>
         <div className="NavInnerContener">
             <div className="LogoAccountButton">
@@ -20,7 +22,9 @@ function Nav() {
             </div>
             
             <div className="NavControlls">
-                <button className="NavButton"><FontAwesomeIcon fontSize={22} icon={faNavicon}/></button>
+                <button className="NavButton" onClick={()=>{setShowCategoriesSidebar(true)}}>
+                    <FontAwesomeIcon fontSize={22} icon={faNavicon}/>
+                </button>
                 <Search loading={loading} products={products} searchText={searchText} setSearchText={setSearchText}/>
                 <NavButtons active={searchActive} searchSetActive={setSearchActive} />
             </div>
@@ -29,6 +33,10 @@ function Nav() {
         <div className="subNavSearch">
             <Search loading={loading} products={products} searchText={searchText} setSearchText={setSearchText} uvekPrikazi={true} />
         </div>
+        }
+        {
+            showCategoriesSidebar && 
+            <CategoriesSidebar setShow={setShowCategoriesSidebar} />
         }
     </nav> );
 }

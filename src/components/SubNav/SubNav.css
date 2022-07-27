@@ -1,0 +1,40 @@
+.SubNav {
+    height: 52px;
+    background-color: var(--background-color-gray);
+    display: flex;
+    align-items: center;
+    
+}
+
+@media (max-width:1000px) {
+    .SubNav {
+        display: none;
+    }
+}
+
+.InnerSubNav {
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.SubNavLinks {
+    background-color: inherit;
+
+}
+.SubNavLinks a {
+    background-color: inherit;
+    text-decoration: none;
+    color: var(--text-color);
+    width: 82px;
+    height: 52px;
+    padding:8px 32px 8px 0;
+    font-size: 16px;
+}
+.SubNavLinks a:hover {
+    color: var(--text-color-orangeDark)
+}

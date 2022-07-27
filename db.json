@@ -52,5 +52,39 @@
         }
 
 
+    ],
+    "Categories":[
+        {
+            "id":0,
+            "name":"Tehnika"
+        },
+        {
+            "id":1,
+            "name":"Bela Tehnika"
+        },
+        {
+            "id":2,
+            "name":"Sve za kucu"
+        },
+        {
+            "id":3,
+            "name":"Sport i rekreacija"
+        },
+        {
+            "id":4,
+            "name":"Decja oprema"
+        },
+        {
+            "id":5,
+            "name":"Gift shop"
+        },
+        {
+            "id":6,
+            "name":"Alati i dvoriste"
+        },
+        {
+            "id":7,
+            "name":"Moda"
+        }
     ]
 }

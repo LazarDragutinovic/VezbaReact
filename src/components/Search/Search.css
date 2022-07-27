@@ -1,6 +1,6 @@
 .Search {
     max-width: 350px;
-    flex: 1 1 auto;
+    flex: 1 1 350px;
     text-align: center;
     border: 1px solid gray;
     border-radius: 3px;
@@ -26,7 +26,6 @@
     display:block;
     max-width: 85%;
     margin: 20px 0
-
 }
 
 @media (min-width:571px) {

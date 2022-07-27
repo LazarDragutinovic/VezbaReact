@@ -1,0 +1,54 @@
+.CategoriesTab {
+    position: absolute;
+    width: 300px;
+    height: calc( 100vh - 89px - 52px );
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--background-color-gray);
+    top: 44px;
+    left:-30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.CategoriesTabExtended {
+    width: 1000px;   
+}
+
+.CategoriesHeader {
+    height: 61px;
+    color: var(--text-color);
+    background-color:var(--background-color-lightGray);
+    border-top: 4px solid var(--border-color-gray);
+    border-right: 1px solid var(--border-color-gray);
+    border-left: 1px solid var(--border-color-gray);
+    border-bottom: 1px solid var(--border-color-lightGray);
+    padding: 16px 8px 8px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+}
+.CategoriesHeader span {
+    width: 300px;
+    display: inline-block;
+    background-color: inherit;
+}
+
+.CategoriesLinks {
+    width: 300px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: 1px solid var(--border-color-gray);
+}
+
+.CategoriesTabExtended .CategoriesLinks {
+    border-right: 1px solid var(--border-color-gray);
+}
+
+.CategoriesLinksAndMore {
+    flex:1 1 auto;
+    display: flex;
+    flex-direction: column;
+}

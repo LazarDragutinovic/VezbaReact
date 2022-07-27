@@ -2,8 +2,11 @@
     flex:1 1 auto;
     font-weight: 800;
     font-size: 40px;
-    
+    display: block;
+    text-decoration: none;
+    color: black;
 }
+
 
 .logoStubTitle {
     color: var(--text-color-oragne);

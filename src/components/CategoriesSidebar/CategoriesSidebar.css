@@ -1,0 +1,41 @@
+.CategoriesSidebar {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    background-color: transparent;
+    --transition-time: 0.7s;
+}
+
+
+.CategoriesSidebarForeground {
+    width: 80vw; 
+    height: 100vh;
+    z-index: 1010;
+    background-color: var(--background-color-white);
+    position: fixed;
+    top:0;
+    left: -80vw;
+    transition: left var(--transition-time);
+}
+.CategoriesSidebarForegroundShow {
+    left: 0;
+    transition: left var(--transition-time);
+}
+
+
+
+.CategoriesSidebarBackground {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    background-color: transparent;
+    transition: background-color var(--transition-time);
+}
+
+.CategoriesSidebarBackgroundDarker {
+    background-color: rgba(0,0,0,0.6);
+    transition: background-color var(--transition-time);
+}

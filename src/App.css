@@ -2,6 +2,21 @@
   --text-color: #212738;
   --text-color-oragne: rgb(255, 115, 0);
   --text-color-orangeDark: #d9400b;
+  --text-color-gray: #888787;
+  
+  --border-color-gray: #bcc1c7;
+  --border-color-lightGray: #dfdfdf;
+
+  --background-color-gray: #dddddd;
+  --background-color-lightGray: #eeeeee;
+  --background-color-white: #ffffff;
+  
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
 }
 
 *{
@@ -9,4 +24,22 @@
   margin: 0;
   box-sizing: border-box;
   background-color: white;
+}
+
+.Hoverable:hover {
+  color: var(--text-color-orangeDark);
+  transition: 0.7s;
+}
+
+.Page {
+  width: 100vw;
+  min-height: calc( 100vh - 89px - 52px);
+  background-color: #f6f6f6;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+  .Page {
+    min-height: calc( 100vh - 125px );
+  }
 }
