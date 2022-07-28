@@ -10,7 +10,7 @@
   --background-color-gray: #dddddd;
   --background-color-lightGray: #eeeeee;
   --background-color-white: #ffffff;
-  
+  --background-color-lighterGray: #f6f6f6; 
 
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -31,8 +31,12 @@
   transition: 0.7s;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .Page {
-  width: 100vw;
+  max-width: 100vw;
   min-height: calc( 100vh - 89px - 52px);
   background-color: #f6f6f6;
   padding-bottom: 40px;
@@ -42,4 +46,9 @@
   .Page {
     min-height: calc( 100vh - 125px );
   }
+}
+
+
+.SliderContainer {
+  width: 100vw;
 }

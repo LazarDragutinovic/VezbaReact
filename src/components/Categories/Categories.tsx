@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import getAllCategories from "../../api/category-api";
 import useCategoriesHook from "../../hooks/useCategoriesHook";
@@ -7,22 +8,18 @@ import { category } from "../../models/category";
 import action from "../../state/action";
 import appContext from "../../state/appContext";
 import { appState } from "../../state/appState";
-import { selectCategory } from "../../state/categoriesReducer";
+import { RootState } from "../../state/store";
 import CategoriesLink from "../CategoriesLink/CategoriesLink";
+import { selectCategory } from "../../state/categorySlice";
 import "./Categories.css"
 
 function Categories() {
     
     
-    const context = useContext(appContext);
-    let state :appState | null = null,dispatch:React.Dispatch<action>;
-    let selectedCategoryDebounced: category | null = null;
-    if(context) {
-        state = context.state;
-        dispatch = context.dispatch;
-        
-    }
-    selectedCategoryDebounced = useDebounce(state?.selectedCategory || null)
+    const dispatch = useDispatch();
+    const selectedCategory = useSelector((state:RootState)=>state.categoryReducer.selectedCategory);
+    const categories = useSelector((state:RootState)=>state.categoryReducer.categories)
+    let selectedCategoryDebounced = useDebounce(selectedCategory)
     const setSelectedCategory = (category: category | null)=>{
         dispatch(selectCategory(category))
     }
@@ -38,7 +35,7 @@ function Categories() {
             <div className="CategoriesLinksAndMore">
                 <div className="CategoriesLinks">
                     
-                    {state && state.categories.length > 0 && state.categories.map(cat=><CategoriesLink setCategory={setSelectedCategory} category={cat} key={cat.id} />)}
+                    {categories.length > 0 && categories.map(cat=><CategoriesLink setCategory={setSelectedCategory} category={cat} key={cat.id} />)}
                 </div>
                 <div>
 

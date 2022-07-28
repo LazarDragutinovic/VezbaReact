@@ -4,51 +4,59 @@
             "id":0,
             "naziv":"Lopta",
             "cena":2000,
-            "tip":"sport"
+            "tip":"sport",
+            "opis":"Blablabla sads 123 woso aosod oasdo os12 sodl 12o o l o a 231 sol o sdlspdsd l. da sad ad ?dasddsdsadad e23123sd ."
         },
         
         {
             "id":1,
             "naziv":"Reket",
             "cena":2000,
-            "tip":"sport"
+            "tip":"sport",
+            "opis":"Blablabla sads 123 woso aosod oasdo os12 sodl 12o o l o a 231 sol o sdlspdsd l. da sad ad ?dasddsdsadad e23123sd ."
         }
         ,
         {
             "id":2,
             "naziv":"Lampa",
             "cena":2000,
-            "tip":"alati"
+            "tip":"alati",
+            "opis":"Blablabla sads 123 woso aosod oasdo os12 sodl 12o o l o a 231 sol o sdlspdsd l. da sad ad ?dasddsdsadad e23123sd ."
         },
         {
             "id":3,
             "naziv":"Srafciger",
             "cena":2000,
-            "tip":"alati"
+            "tip":"alati",
+            "opis":"Blablabla sads 123 woso aosod oasdo os12 sodl 12o o l o a 231 sol o sdlspdsd l. da sad ad ?dasddsdsadad e23123sd ."
         },
         {
             "id":4,
             "naziv":"Sekac",
             "cena":2000,
-            "tip":"alati"
+            "tip":"alati",
+            "opis":"Blablabla sads 123 woso aosod oasdo os12 sodl 12o o l o a 231 sol o sdlspdsd l. da sad ad ?dasddsdsadad e23123sd ."
         },
         {
             "id":5,
             "naziv":"Sekac",
             "cena":2000,
-            "tip":"alati"
+            "tip":"alati",
+            "opis":"Blablabla sads 123 woso aosod oasdo os12 sodl 12o o l o a 231 sol o sdlspdsd l. da sad ad ?dasddsdsadad e23123sd ."
         },
         {
             "id":6,
             "naziv":"Sekac",
             "cena":2000,
-            "tip":"alati"
+            "tip":"alati",
+            "opis":"Blablabla sads 123 woso aosod oasdo os12 sodl 12o o l o a 231 sol o sdlspdsd l. da sad ad ?dasddsdsadad e23123sd ."
         },
         {
             "id":7,
             "naziv":"Sekac",
             "cena":2000,
-            "tip":"alati"
+            "tip":"alati",
+            "opis":"Blablabla sads 123 woso aosod oasdo os12 sodl 12o o l o a 231 sol o sdlspdsd l. da sad ad ?dasddsdsadad e23123sd ."
         }
 
 
@@ -85,6 +93,18 @@
         {
             "id":7,
             "name":"Moda"
+        },
+        {
+            "id":8,
+            "name":"It oprema"
+        },
+        {
+            "id":9,
+            "name":"Igracke"
+        },
+        {
+            "id":10,
+            "name":"Lepota i zdravlje"
         }
     ]
 }

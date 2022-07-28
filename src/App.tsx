@@ -9,21 +9,22 @@ import mainReducer from './state/mainReducer';
 import initialState from './state/appState';
 import appContext from './state/appContext';
 import getAllCategories from './api/category-api';
-import { loadCategories } from './state/categoriesReducer';
-
+import { useDispatch } from 'react-redux';
+import {loadCategories} from "./state/categorySlice" 
 
 function App() {
 
-  let [state,dispatch] = useReducer(mainReducer,initialState);
+  const appDispatch = useDispatch();
+  
+
   useEffect(()=>{
     let setCategories = async ()=>{
       let cat = await getAllCategories();
-      dispatch(loadCategories(cat));
+      appDispatch(loadCategories(cat))
     }
     setCategories()
   },[])
   return (
-    <appContext.Provider value={{state,dispatch}}>
       <div className="App">
         <Router>
           <Nav />
@@ -31,7 +32,6 @@ function App() {
           <Pages />
         </Router>
       </div>
-    </appContext.Provider>
   );
 }
 
